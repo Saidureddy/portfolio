@@ -2,6 +2,8 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { portfolio } from "../../data/portfolio";
 import Background from "../Background/Background";
+import profileImg from "../../assets/images/profile.png";
+
 
 export default function Hero() {
   return (
@@ -148,11 +150,15 @@ export default function Hero() {
     transition={{ duration: 0.8 }}
     className="rounded-3xl border border-white/10 bg-white/5 p-5 backdrop-blur-xl shadow-2xl"
   >
-    <img
+    {/* <img
       src="/images/profile.png"
-      alt="Badam Saidureddy"
+      alt="Badam saidureddy"
       className="h-[380px] w-[320px] rounded-2xl object-cover"
-    />
+    /> */}
+    <img
+  src={profileImg}
+  alt="Badam Saidureddy"
+/>
   </motion.div>
 
   {/* AI Button */}
