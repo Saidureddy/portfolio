@@ -1,0 +1,19 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background:#09090B;
+    color:white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: #14b8a6;
+  color: white;
+}
