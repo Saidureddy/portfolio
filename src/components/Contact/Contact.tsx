@@ -50,13 +50,11 @@ export default function Contact() {
                     Email
                   </h3>
 
-                  <a
-                    href={`mailto:${portfolio.personal.email}`}
-                    className="text-slate-400 hover:text-emerald-400"
+                 <a
+                 href={`mailto:${portfolio.personal.email}`}
                   >
-                    {portfolio.personal.email}
-                  </a>
-
+                     {portfolio.personal.email}
+                     </a>
                 </div>
 
               </div>
@@ -77,14 +75,13 @@ export default function Contact() {
                     GitHub
                   </h3>
 
-                  <a
-                    href={portfolio.personal.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-slate-400 hover:text-white"
-                  >
-                    View GitHub Profile
-                  </a>
+                 <a
+  href={portfolio.personal.github}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  View GitHub Profile
+</a>
 
                 </div>
 
@@ -107,13 +104,12 @@ export default function Contact() {
                   </h3>
 
                   <a
-                    href={portfolio.personal.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-slate-400 hover:text-blue-400"
-                  >
-                    View LinkedIn Profile
-                  </a>
+                 href={portfolio.personal.linkedin}
+                 target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View LinkedIn Profile
+                 </a>
 
                 </div>
 
