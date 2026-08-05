@@ -9,6 +9,7 @@ import Projects from "./components/Projects/Projects";
 import Experience from "./components/Experience/Experience";
 import Certifications from "./components/Certifications/Certifications";
 import Contact from "./components/Contact/Contact";
+import ChatWidget from "./components/Chat/ChatWidget";
 import { useTheme } from "./hooks/useTheme";
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
       <Projects />
       <Certifications />
       <Contact />
+      <ChatWidget />
     </div>
   );
 }
