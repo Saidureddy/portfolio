@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { GraduationCap, Briefcase, MapPin, Award } from "lucide-react";
 import { portfolio } from "../../data/portfolio";
+import SectionEyebrow from "../UI/SectionEyebrow";
 
 export default function About() {
   return (
@@ -17,6 +18,8 @@ export default function About() {
           viewport={{ once: true }}
         >
 
+          <SectionEyebrow number="01" label="About" />
+
           <h2 className="mb-6 text-center text-5xl font-black text-slate-900 dark:text-white">
             About Me
           </h2>
@@ -27,7 +30,7 @@ export default function About() {
 
           <div className="grid gap-6 md:grid-cols-3">
 
-            <div className="rounded-3xl border border-black/10 bg-black/5 dark:border-white/10 dark:bg-white/5 p-8 backdrop-blur-xl transition hover:border-emerald-400 md:col-span-2">
+            <div className="rounded-3xl border border-slate-200 bg-slate-50 dark:border-white/10 dark:bg-white/5 p-8 backdrop-blur-xl transition hover:border-emerald-400 md:col-span-2">
 
               <GraduationCap className="mb-6 text-emerald-400" size={38} />
 
@@ -62,7 +65,7 @@ export default function About() {
 
             </div>
 
-            <div className="flex flex-col items-center justify-center rounded-3xl border border-black/10 bg-black/5 dark:border-white/10 dark:bg-white/5 p-8 text-center backdrop-blur-xl transition hover:border-yellow-400">
+            <div className="flex flex-col items-center justify-center rounded-3xl border border-slate-200 bg-slate-50 dark:border-white/10 dark:bg-white/5 p-8 text-center backdrop-blur-xl transition hover:border-yellow-400">
 
               <Award className="mb-4 text-amber-600 dark:text-yellow-400" size={32} />
 
@@ -76,7 +79,7 @@ export default function About() {
 
             </div>
 
-            <div className="rounded-3xl border border-black/10 bg-black/5 dark:border-white/10 dark:bg-white/5 p-8 backdrop-blur-xl transition hover:border-cyan-400 md:col-span-2">
+            <div className="rounded-3xl border border-slate-200 bg-slate-50 dark:border-white/10 dark:bg-white/5 p-8 backdrop-blur-xl transition hover:border-cyan-400 md:col-span-2">
 
               <Briefcase className="mb-6 text-cyan-400" size={38} />
 
@@ -104,7 +107,7 @@ export default function About() {
 
             </div>
 
-            <div className="flex flex-col items-center justify-center rounded-3xl border border-black/10 bg-black/5 dark:border-white/10 dark:bg-white/5 p-8 text-center backdrop-blur-xl transition hover:border-pink-400">
+            <div className="flex flex-col items-center justify-center rounded-3xl border border-slate-200 bg-slate-50 dark:border-white/10 dark:bg-white/5 p-8 text-center backdrop-blur-xl transition hover:border-pink-400">
 
               <MapPin className="mb-4 text-pink-400" size={32} />
 

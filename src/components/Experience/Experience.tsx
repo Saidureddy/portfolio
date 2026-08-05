@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Briefcase, CalendarDays, MapPin } from "lucide-react";
 import { experiences } from "../../data/experience";
+import SectionEyebrow from "../UI/SectionEyebrow";
 
 export default function Experience() {
   return (
@@ -9,6 +10,8 @@ export default function Experience() {
       className="bg-white py-16 px-6 dark:bg-[#09090B]"
     >
       <div className="mx-auto max-w-6xl">
+
+        <SectionEyebrow number="03" label="Experience" />
 
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
@@ -38,7 +41,7 @@ export default function Experience() {
 
               {/* Card */}
 
-              <div className="rounded-3xl border border-black/10 bg-black/5 p-8 backdrop-blur-xl transition-all duration-300 hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-500/20 dark:border-white/10 dark:bg-white/5">
+              <div className="rounded-3xl border border-slate-200 bg-slate-50 p-8 backdrop-blur-xl transition-all duration-300 hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-500/20 dark:border-white/10 dark:bg-white/5">
 
                 <div className="flex items-center gap-4 mb-4">
 

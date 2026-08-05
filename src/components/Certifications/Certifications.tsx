@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { certificates } from "../../data/certifications";
+import SectionEyebrow from "../UI/SectionEyebrow";
 
 export default function Certifications() {
   return (
@@ -8,6 +9,8 @@ export default function Certifications() {
       className="bg-white py-16 px-6 dark:bg-[#09090B]"
     >
       <div className="mx-auto max-w-7xl">
+
+        <SectionEyebrow number="05" label="Achievements" />
 
         <motion.h2
           initial={{ opacity: 0, y: 30 }}

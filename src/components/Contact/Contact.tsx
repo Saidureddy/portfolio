@@ -9,6 +9,7 @@ import {
   FaPhoneAlt,
 } from "react-icons/fa";
 import { portfolio } from "../../data/portfolio";
+import SectionEyebrow from "../UI/SectionEyebrow";
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -45,6 +46,8 @@ export default function Contact() {
     >
       <div className="mx-auto max-w-7xl">
 
+        <SectionEyebrow number="06" label="Contact" />
+
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -68,7 +71,7 @@ export default function Contact() {
 
             {/* Email */}
 
-            <div className="rounded-3xl border border-black/10 bg-black/5 dark:border-white/10 dark:bg-white/5 p-6 backdrop-blur-xl transition hover:border-emerald-400">
+            <div className="rounded-3xl border border-slate-200 bg-slate-50 dark:border-white/10 dark:bg-white/5 p-6 backdrop-blur-xl transition hover:border-emerald-400">
 
               <div className="flex items-center gap-4">
 
@@ -93,7 +96,7 @@ export default function Contact() {
 
             {/* Phone */}
 
-            <div className="rounded-3xl border border-black/10 bg-black/5 dark:border-white/10 dark:bg-white/5 p-6 backdrop-blur-xl transition hover:border-emerald-400">
+            <div className="rounded-3xl border border-slate-200 bg-slate-50 dark:border-white/10 dark:bg-white/5 p-6 backdrop-blur-xl transition hover:border-emerald-400">
 
               <div className="flex items-center gap-4">
 
@@ -116,7 +119,7 @@ export default function Contact() {
 
             {/* GitHub */}
 
-            <div className="rounded-3xl border border-black/10 bg-black/5 dark:border-white/10 dark:bg-white/5 p-6 backdrop-blur-xl transition hover:border-black dark:hover:border-white">
+            <div className="rounded-3xl border border-slate-200 bg-slate-50 dark:border-white/10 dark:bg-white/5 p-6 backdrop-blur-xl transition hover:border-black dark:hover:border-white">
 
               <div className="flex items-center gap-4">
 
@@ -144,7 +147,7 @@ export default function Contact() {
 
             {/* LinkedIn */}
 
-            <div className="rounded-3xl border border-black/10 bg-black/5 dark:border-white/10 dark:bg-white/5 p-6 backdrop-blur-xl transition hover:border-blue-500">
+            <div className="rounded-3xl border border-slate-200 bg-slate-50 dark:border-white/10 dark:bg-white/5 p-6 backdrop-blur-xl transition hover:border-blue-500">
 
               <div className="flex items-center gap-4">
 
@@ -172,7 +175,7 @@ export default function Contact() {
 
             {/* Location */}
 
-            <div className="rounded-3xl border border-black/10 bg-black/5 dark:border-white/10 dark:bg-white/5 p-6 backdrop-blur-xl transition hover:border-red-400">
+            <div className="rounded-3xl border border-slate-200 bg-slate-50 dark:border-white/10 dark:bg-white/5 p-6 backdrop-blur-xl transition hover:border-red-400">
 
               <div className="flex items-center gap-4">
 
@@ -198,7 +201,7 @@ export default function Contact() {
 
           {/* Right Side */}
 
-          <div className="rounded-3xl border border-black/10 bg-black/5 dark:border-white/10 dark:bg-white/5 p-8 backdrop-blur-xl">
+          <div className="rounded-3xl border border-slate-200 bg-slate-50 dark:border-white/10 dark:bg-white/5 p-8 backdrop-blur-xl">
 
             <h3 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
               Send a Message
@@ -212,7 +215,7 @@ export default function Contact() {
                 value={form.name}
                 onChange={handleChange}
                 placeholder="Your Name"
-                className="w-full rounded-xl border border-black/10 bg-transparent p-4 text-slate-900 outline-none placeholder:text-slate-400 focus:border-emerald-400 dark:border-white/10 dark:text-white dark:placeholder:text-slate-500"
+                className="w-full rounded-xl border border-slate-300 bg-transparent p-4 text-slate-900 outline-none placeholder:text-slate-400 focus:border-emerald-400 dark:border-white/10 dark:text-white dark:placeholder:text-slate-500"
               />
 
               <input
@@ -221,7 +224,7 @@ export default function Contact() {
                 value={form.email}
                 onChange={handleChange}
                 placeholder="Your Email"
-                className="w-full rounded-xl border border-black/10 bg-transparent p-4 text-slate-900 outline-none placeholder:text-slate-400 focus:border-emerald-400 dark:border-white/10 dark:text-white dark:placeholder:text-slate-500"
+                className="w-full rounded-xl border border-slate-300 bg-transparent p-4 text-slate-900 outline-none placeholder:text-slate-400 focus:border-emerald-400 dark:border-white/10 dark:text-white dark:placeholder:text-slate-500"
               />
 
               <textarea
@@ -230,7 +233,7 @@ export default function Contact() {
                 value={form.message}
                 onChange={handleChange}
                 placeholder="Your Message"
-                className="w-full rounded-xl border border-black/10 bg-transparent p-4 text-slate-900 outline-none placeholder:text-slate-400 focus:border-emerald-400 dark:border-white/10 dark:text-white dark:placeholder:text-slate-500"
+                className="w-full rounded-xl border border-slate-300 bg-transparent p-4 text-slate-900 outline-none placeholder:text-slate-400 focus:border-emerald-400 dark:border-white/10 dark:text-white dark:placeholder:text-slate-500"
               />
 
               <button

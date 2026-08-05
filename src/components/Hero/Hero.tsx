@@ -95,7 +95,7 @@ export default function Hero() {
   <a
     href={portfolio.personal.resume}
     download
-    className="rounded-xl border border-black/20 px-6 py-3 font-semibold text-slate-900 transition-all duration-300 hover:border-emerald-400 hover:bg-black/5 dark:border-white/20 dark:text-white dark:hover:bg-white/10"
+    className="rounded-xl border border-slate-300 px-6 py-3 font-semibold text-slate-900 transition-all duration-300 hover:border-emerald-400 hover:bg-slate-100 dark:border-white/20 dark:text-white dark:hover:bg-white/10"
   >
     ⬇ Download Resume
   </a>
@@ -142,7 +142,7 @@ export default function Hero() {
     initial={{ opacity: 0, scale: 0.8 }}
     animate={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.8 }}
-    className="rounded-3xl border border-black/10 bg-black/5 p-5 backdrop-blur-xl shadow-2xl dark:border-white/10 dark:bg-white/5"
+    className="rounded-3xl border border-slate-200 bg-slate-50 p-5 backdrop-blur-xl shadow-2xl dark:border-white/10 dark:bg-white/5"
   >
     <img
   src={profileImg}

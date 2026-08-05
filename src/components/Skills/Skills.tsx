@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { skills } from "../../data/skills";
+import SectionEyebrow from "../UI/SectionEyebrow";
 
 export default function Skills() {
   return (
@@ -8,6 +9,8 @@ export default function Skills() {
       className="bg-white py-16 px-6 dark:bg-[#09090B]"
     >
       <div className="mx-auto max-w-7xl">
+
+        <SectionEyebrow number="02" label="Skills" />
 
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
@@ -18,23 +21,24 @@ export default function Skills() {
           Skills
         </motion.h2>
 
-        <div className="space-y-14">
+        <div className="grid gap-6 md:grid-cols-2">
 
           {skills.map((group, index) => (
 
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 40 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
+              transition={{ delay: (index % 2) * 0.1 }}
               viewport={{ once: true }}
+              className="rounded-3xl border border-slate-200 bg-slate-50 p-6 backdrop-blur-xl transition hover:border-emerald-400 dark:border-white/10 dark:bg-white/5"
             >
 
-              <h3 className="mb-8 text-2xl font-bold text-emerald-600 dark:text-emerald-400">
+              <h3 className="mb-5 text-lg font-bold text-emerald-600 dark:text-emerald-400">
                 {group.title}
               </h3>
 
-              <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-5">
+              <div className="flex flex-wrap gap-3">
 
                 {group.items.map((skill) => {
 
@@ -42,29 +46,13 @@ export default function Skills() {
 
                   return (
 
-                    <motion.div
-                      whileHover={{
-                        y: -8,
-                        scale: 1.05,
-                      }}
+                    <span
                       key={skill.name}
-                      className="rounded-3xl border border-black/10 bg-black/5 p-6 backdrop-blur-xl transition dark:border-white/10 dark:bg-white/5"
-
+                      className="flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-sm transition hover:border-emerald-400 hover:text-emerald-600 dark:border-white/10 dark:bg-black/20 dark:text-slate-200 dark:shadow-none dark:hover:text-emerald-400"
                     >
-                      <div className="flex flex-col items-center">
-
-                        <Icon
-                          size={45}
-                          className="mb-4 text-emerald-600 dark:text-emerald-400"
-                        />
-
-                        <h4 className="text-center font-semibold text-slate-900 dark:text-white">
-                          {skill.name}
-                        </h4>
-
-                      </div>
-
-                    </motion.div>
+                      <Icon size={16} className="text-emerald-600 dark:text-emerald-400" />
+                      {skill.name}
+                    </span>
 
                   );
 

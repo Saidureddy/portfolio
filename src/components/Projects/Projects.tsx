@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { projects } from "../../data/projects";
+import SectionEyebrow from "../UI/SectionEyebrow";
 
 export default function Projects() {
   return (
@@ -8,6 +9,8 @@ export default function Projects() {
       className="bg-white py-16 px-6 dark:bg-[#09090B]"
     >
       <div className="mx-auto max-w-7xl">
+
+        <SectionEyebrow number="04" label="Projects" />
 
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
@@ -34,7 +37,7 @@ export default function Projects() {
               transition={{ duration: 0.6, delay: (index % 2) * 0.15 }}
               viewport={{ once: true }}
               whileHover={{ y: -8 }}
-              className="rounded-3xl border border-black/10 bg-black/5 p-8 backdrop-blur-xl transition-all hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-500/20 dark:border-white/10 dark:bg-white/5"
+              className="rounded-3xl border border-slate-200 bg-slate-50 p-8 backdrop-blur-xl transition-all hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-500/20 dark:border-white/10 dark:bg-white/5"
             >
 
               <h3 className="mb-4 text-2xl font-bold text-slate-900 dark:text-white">

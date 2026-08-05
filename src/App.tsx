@@ -1,4 +1,5 @@
 import { Toaster } from "react-hot-toast";
+import ScrollProgress from "./components/UI/ScrollProgress";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import MouseGlow from "./components/Cursor/MouseGlow";
@@ -32,6 +33,7 @@ function App() {
                 },
         }}
       />
+      <ScrollProgress />
       <MouseGlow />
       <Navbar />
       <Hero />
