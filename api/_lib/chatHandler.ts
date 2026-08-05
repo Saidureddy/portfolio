@@ -107,10 +107,16 @@ export async function getChatReply(
     throw new Error(`Gemini API error (${response.status}): ${errText}`);
   }
 
-  const data = await response.json();
+  interface GeminiResponse {
+    candidates?: Array<{
+      content?: { parts?: Array<{ text?: string }> };
+    }>;
+  }
+
+  const data = (await response.json()) as GeminiResponse;
   const text =
     data?.candidates?.[0]?.content?.parts
-      ?.map((p: { text?: string }) => p.text ?? "")
+      ?.map((p) => p.text ?? "")
       .join("") ?? "";
 
   if (!text) {
