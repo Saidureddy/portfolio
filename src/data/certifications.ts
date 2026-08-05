@@ -1,19 +1,43 @@
 export const certificates = [
   {
-    title: "Full Stack Java Developer Internship",
-    organization: "Sanvi Technologies",
-    duration: "May 2023 - July 2023",
+    title: "Transaction Throughput",
+    metric: "8K TPS",
     description:
-      "Successfully completed a Full Stack Java Development Internship covering Java, HTML, CSS, JavaScript, SQL, and web application development.",
-    certificateLink: "#",
+      "Sustained high-throughput payment processing via Java Virtual Threads and semaphore-based backpressure control during peak traffic.",
   },
 
   {
-    title: "Full Stack Java Developer Training",
-    organization: "CV Corp Institutions",
-    duration: "July 2025 - July 2026",
+    title: "Daily Payment Events",
+    metric: "150K+ / day",
     description:
-      "Completed comprehensive Full Stack Java Training including Core Java, Spring Boot, React.js, REST APIs, MySQL, Git, Maven, and real-world project development.",
-    certificateLink: "#",
+      "Kafka-based asynchronous workflows enabling fault-tolerant, retry-safe transaction processing at scale.",
+  },
+
+  {
+    title: "Merchant Integration Speed",
+    metric: "80% Faster",
+    description:
+      "A reusable JavaScript Authentication SDK cut integration time for PCI DSS-certified merchant checkout apps.",
+  },
+
+  {
+    title: "Dashboard Latency",
+    metric: "70% Reduction",
+    description:
+      "MongoDB aggregation tuning, projections, and compound indexing sharply cut dashboard load times.",
+  },
+
+  {
+    title: "API Response Time",
+    metric: "55% Faster",
+    description:
+      "Redis caching for payment metadata cut API response times and lowered database load by 40%.",
+  },
+
+  {
+    title: "Report Generation Throughput",
+    metric: "13K records/sec",
+    description:
+      "Multithreaded Java Streams-based reporting engine for CSV, Excel, and PDF exports.",
   },
 ];

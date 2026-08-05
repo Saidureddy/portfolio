@@ -2,7 +2,7 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { portfolio } from "../../data/portfolio";
 import Background from "../Background/Background";
-import profileImg from "../../assets/images/profile.png";
+import profileImg from "../../assets/images/profile.jpg";
 
 
 export default function Hero() {
@@ -41,7 +41,7 @@ export default function Hero() {
   </span>
 
   <span className="block bg-gradient-to-r from-emerald-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent">
-    Saidureddy
+    Rajasekhara Reddy
   </span>
 
 </h1>
@@ -56,13 +56,13 @@ export default function Hero() {
 
     <TypeAnimation
       sequence={[
-        "Java Full Stack Developer",
+        "Java Full Stack Engineer",
         2000,
-        "Spring Boot Developer",
+        "Payments & Distributed Systems",
         2000,
-        "Backend Engineer",
+        "Spring Boot Microservices",
         2000,
-        "React Developer",
+        "Angular Developer",
         2000,
       ]}
       wrapper="span"
@@ -74,9 +74,9 @@ export default function Hero() {
   </div>
 
   <p className="max-w-xl text-lg leading-8 text-slate-300">
-    Building scalable backend systems and modern web applications using Java,
-    Spring Boot, React and MySQL. Passionate about writing clean code and
-    solving real-world problems.
+    4+ years building enterprise-scale FinTech payment platforms with Java,
+    Spring Boot, Microservices, Angular, and Kafka — spanning payment
+    acquiring, switching, settlement, and reconciliation.
   </p>
 
 </div>
@@ -118,18 +118,18 @@ export default function Hero() {
 <div className="mt-10 flex flex-wrap gap-10">
 
   <div>
-    <h2 className="text-4xl font-bold text-emerald-400">2+</h2>
-    <p className="text-slate-400">Projects</p>
+    <h2 className="text-4xl font-bold text-emerald-400">4+</h2>
+    <p className="text-slate-400">Years Experience</p>
   </div>
 
   <div>
-    <h2 className="text-4xl font-bold text-cyan-400">1</h2>
-    <p className="text-slate-400">Internship</p>
+    <h2 className="text-4xl font-bold text-cyan-400">12+</h2>
+    <p className="text-slate-400">Microservices Shipped</p>
   </div>
 
   <div>
-    <h2 className="text-4xl font-bold text-yellow-400">5+</h2>
-    <p className="text-slate-400">Technologies</p>
+    <h2 className="text-4xl font-bold text-yellow-400">8K TPS</h2>
+    <p className="text-slate-400">Peak Throughput</p>
   </div>
 
 </div>
@@ -150,14 +150,9 @@ export default function Hero() {
     transition={{ duration: 0.8 }}
     className="rounded-3xl border border-white/10 bg-white/5 p-5 backdrop-blur-xl shadow-2xl"
   >
-    {/* <img
-      src="/images/profile.png"
-      alt="Badam saidureddy"
-      className="h-[380px] w-[320px] rounded-2xl object-cover"
-    /> */}
     <img
   src={profileImg}
-  alt="Badam Saidureddy"
+  alt="Badam Rajasekhara Reddy"
 />
   </motion.div>
 

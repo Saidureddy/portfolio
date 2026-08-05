@@ -67,32 +67,25 @@ export default function About() {
               <Briefcase className="mb-6 text-cyan-400" size={38} />
 
               <h3 className="mb-4 text-2xl font-bold">
-                Internship
+                Current Role
               </h3>
 
-             <div className="space-y-4">
-  {portfolio.personal.about.internships.map((item, index) => (
-    <div
-      key={index}
-      className="border-l-2 border-cyan-400 pl-4"
-    >
+             <div className="border-l-2 border-cyan-400 pl-4">
       <h4 className="font-semibold text-white">
-        {item.role}
+        {portfolio.personal.about.currentRole.role}
       </h4>
 
       <p className="text-slate-300 text-sm">
-        {item.company}
+        {portfolio.personal.about.currentRole.company}
       </p>
 
       <p className="text-slate-400 text-sm">
-        {item.duration}
+        {portfolio.personal.about.currentRole.duration}
       </p>
 
       <p className="text-slate-400 text-sm">
-        {item.location}
+        {portfolio.personal.about.currentRole.location}
       </p>
-    </div>
-  ))}
 </div>
 
             </div>
@@ -102,7 +95,7 @@ export default function About() {
               <Award className="mb-6 text-yellow-400" size={38} />
 
               <h3 className="mb-4 text-2xl font-bold">
-                CGPA
+                Academic Score
               </h3>
 
               <p className="text-3xl font-bold text-yellow-400">

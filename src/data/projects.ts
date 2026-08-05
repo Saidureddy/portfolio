@@ -1,84 +1,104 @@
 export const projects = [
   {
-    title: "Library Management System",
+    title: "High-Throughput Transaction Pipeline",
+
+    metric: "8K TPS",
 
     description:
-      "A complete Full Stack Library Management System developed using Java, Spring Boot, React.js, and MySQL. The application provides separate modules for Librarians and Students, enabling efficient management of books, student records, book issuance, returns, and inventory. It streamlines daily library operations through a responsive interface and secure backend services.",
+      "Engineered a high-throughput payment transaction processing pipeline using Java Virtual Threads, asynchronous execution, and semaphore-based throttling, sustaining 8K TPS while implementing backpressure to prevent downstream PSP overload during peak traffic.",
 
-    technologies: [
-      "Java",
-      "Spring Boot",
-      "React.js",
-      "MySQL",
-    ],
+    technologies: ["Java", "Virtual Threads", "Concurrency", "Semaphores"],
 
     features: [
-      "Book Management",
-      "Student Management",
-      "Librarian Module",
-      "Issue & Return Books",
-      "Search & Filter Books",
-      "Responsive User Interface",
+      "Async execution with Virtual Threads",
+      "Semaphore-based throttling",
+      "Backpressure handling",
+      "PSP overload protection",
     ],
-
-    github: "https://github.com/Saidureddy/library-management-system",
-
-    image: "/projects/library.png",
   },
 
   {
-    title: "Banking Application",
+    title: "Kafka-Based Payment Event Pipeline",
+
+    metric: "150K+ events/day",
 
     description:
-      "A secure banking application built using Java, Spring Boot, and MySQL. The system supports user registration, JWT-based authentication, account management, fund transfers, transaction history, and secure REST APIs. Designed with layered architecture and validation to ensure secure and reliable banking operations.",
+      "Designed Kafka-based asynchronous workflows processing over 150K payment events daily, enabling reliable retry orchestration, fault-tolerant transaction processing, and scalable inter-service communication across distributed microservices.",
 
-    technologies: [
-      "Java",
-      "Spring Boot",
-      "MySQL",
-      "JWT",
-      "REST API",
-    ],
+    technologies: ["Kafka", "Event-Driven Architecture", "Microservices"],
 
     features: [
-      "User Registration & Login",
-      "JWT Authentication",
-      "Fund Transfer",
-      "Transaction History",
-      "Account Management",
-      "REST APIs",
+      "Retry orchestration",
+      "Fault-tolerant processing",
+      "Scalable inter-service communication",
     ],
-
-    github: "https://github.com/Saidureddy/banking-application",
-
-    image: "/projects/banking.png",
   },
 
   {
-    title: "Employee Management System",
+    title: "Reusable Transaction Processing Framework",
+
+    metric: "6 transaction types unified",
 
     description:
-      "A modern Employee Management System developed using Java, Spring Boot, MongoDB, and Razorpay integration. The application enables complete employee lifecycle management, including employee registration, profile updates, record management, and secure online payment processing based on Employee ID. Built using RESTful APIs with a scalable backend architecture.",
+      "Built a reusable transaction processing framework using Factory, Strategy, and Template Method design patterns to support Purchase, Refund, Reversal, UPI, COFT, and MOTO lifecycles, with idempotency and state management for consistency across workflows.",
 
-    technologies: [
-      "Java",
-      "Spring Boot",
-      "MongoDB",
-      "Razorpay",
-      "REST API",
-    ],
+    technologies: ["Java", "Design Patterns", "Spring Boot"],
 
     features: [
-      "Employee CRUD Operations",
-      "MongoDB Integration",
-      "Employee ID Based Payment",
-      "Razorpay Payment Gateway",
-      "REST APIs",
-      "Input Validation",
+      "Factory, Strategy & Template Method patterns",
+      "Idempotency & state management",
+      "Retry & timeout handling",
     ],
+  },
 
-    github: "https://github.com/Saidureddy/employee-management-system",
+  {
+    title: "JavaScript Authentication SDK",
 
-    image: "/projects/employee.png",
+    metric: "80% faster integration",
+
+    description:
+      "Designed and developed a reusable JavaScript Authentication SDK for PCI DSS-certified merchant checkout applications, standardizing authentication and authorization workflows and reducing merchant integration time by 80%.",
+
+    technologies: ["JavaScript", "PCI DSS", "SDK Design"],
+
+    features: [
+      "Standardized auth/authz workflows",
+      "PCI DSS-certified checkout integration",
+      "Reduced merchant onboarding time",
+    ],
+  },
+
+  {
+    title: "High-Performance Reporting Engine",
+
+    metric: "13K records/sec",
+
+    description:
+      "Engineered high-performance reporting services using Java Streams, batch processing, and multithreading, achieving a sustained throughput of 13K records/second for CSV, Excel, and PDF report generation while optimizing JVM memory utilization.",
+
+    technologies: ["Java", "Multithreading", "Batch Processing"],
+
+    features: [
+      "CSV, Excel & PDF generation",
+      "Multithreaded batch processing",
+      "JVM memory optimization",
+    ],
+  },
+
+  {
+    title: "MongoDB & Redis Performance Optimization",
+
+    metric: "70% latency cut",
+
+    description:
+      "Reduced dashboard latency by approximately 70% through MongoDB aggregation optimization, query tuning, early filtering, projections, and compound indexing, and implemented Redis caching for frequently accessed payment metadata, cutting API response times by 55% and database load by 40%.",
+
+    technologies: ["MongoDB", "Redis", "Caching"],
+
+    features: [
+      "Aggregation & query tuning",
+      "Compound indexing",
+      "Redis metadata caching",
+    ],
   },
 ];

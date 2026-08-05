@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Award, ExternalLink } from "lucide-react";
+import { TrendingUp } from "lucide-react";
 import { certificates } from "../../data/certifications";
 
 export default function Certifications() {
@@ -14,55 +14,45 @@ export default function Certifications() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-16 text-center text-5xl font-black text-white"
+          className="mb-4 text-center text-5xl font-black text-white"
         >
-          Certifications
+          Key Achievements
         </motion.h2>
 
-        <div className="grid gap-8 md:grid-cols-2">
+        <p className="mx-auto mb-16 max-w-2xl text-center text-slate-400">
+          Measurable impact delivered on TOUCAN's payment platform.
+        </p>
 
-{certificates.map((item: any, index: number) => (
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+{certificates.map((item, index) => (
 
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.2 }}
+              transition={{ delay: index * 0.1 }}
               viewport={{ once: true }}
               whileHover={{ y: -8 }}
               className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl transition-all hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-500/20"
             >
 
-              <Award
-                className="mb-6 text-yellow-400"
-                size={40}
+              <TrendingUp
+                className="mb-6 text-emerald-400"
+                size={36}
               />
 
-              <h3 className="mb-2 text-2xl font-bold text-white">
+              <p className="mb-2 text-3xl font-black text-cyan-300">
+                {item.metric}
+              </p>
+
+              <h3 className="mb-4 text-xl font-bold text-white">
                 {item.title}
               </h3>
 
-              <p className="mb-2 text-emerald-400">
-                {item.organization}
-              </p>
-
-              <p className="mb-5 text-sm text-slate-400">
-                {item.duration}
-              </p>
-
-              <p className="mb-6 leading-7 text-slate-300">
+              <p className="leading-7 text-slate-300">
                 {item.description}
               </p>
-
-              <a
-                href={item.certificateLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-xl bg-emerald-500 px-5 py-3 font-semibold text-white transition hover:bg-emerald-400"
-              >
-                <ExternalLink size={18} />
-                View Certificate
-              </a>
 
             </motion.div>
 

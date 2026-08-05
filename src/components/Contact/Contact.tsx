@@ -4,6 +4,7 @@ import {
   FaGithub,
   FaLinkedin,
   FaMapMarkerAlt,
+  FaPhoneAlt,
 } from "react-icons/fa";
 import { portfolio } from "../../data/portfolio";
 
@@ -25,7 +26,7 @@ export default function Contact() {
         </motion.h2>
 
         <p className="mx-auto mb-16 max-w-2xl text-center text-slate-400">
-          I'm actively looking for Java Full Stack Developer opportunities.
+          Open to Java Full Stack Engineer opportunities and collaborations.
           Feel free to reach out if you'd like to discuss a role,
           collaboration, or project.
         </p>
@@ -54,6 +55,29 @@ export default function Contact() {
                  href={`mailto:${portfolio.personal.email}`}
                   >
                      {portfolio.personal.email}
+                     </a>
+                </div>
+
+              </div>
+
+            </div>
+
+            {/* Phone */}
+
+            <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl transition hover:border-emerald-400">
+
+              <div className="flex items-center gap-4">
+
+                <FaPhoneAlt className="text-3xl text-emerald-400" />
+
+                <div>
+
+                  <h3 className="font-semibold text-white">
+                    Phone
+                  </h3>
+
+                 <a href={`tel:${portfolio.personal.phone}`}>
+                     {portfolio.personal.phone}
                      </a>
                 </div>
 

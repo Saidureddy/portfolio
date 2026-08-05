@@ -74,6 +74,20 @@ export default function Experience() {
                   {exp.description}
                 </p>
 
+                {exp.highlights && (
+                  <ul className="mb-6 space-y-2">
+                    {exp.highlights.map((point, i) => (
+                      <li
+                        key={i}
+                        className="flex gap-3 text-sm leading-6 text-slate-300"
+                      >
+                        <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-emerald-400" />
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+
                 <div className="flex flex-wrap gap-3">
 
                   {exp.technologies.map((tech) => (

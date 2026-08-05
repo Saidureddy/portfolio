@@ -1,30 +1,47 @@
 import {
   SiJavascript,
+  SiTypescript,
   SiSpringboot,
   SiHtml5,
-  SiMysql,
   SiMongodb,
   SiPostman,
   SiSwagger,
   SiApachemaven,
+  SiApachekafka,
+  SiRedis,
+  SiDocker,
+  SiKubernetes,
+  SiJenkins,
+  SiNginx,
+  SiElasticsearch,
+  SiJsonwebtokens,
+  SiAngular,
 } from "react-icons/si";
 
 import {
   FaJava,
-  FaReact,
   FaGitAlt,
   FaGithub,
 } from "react-icons/fa6";
 
-import { FaCss3Alt } from "react-icons/fa";
-import { BsBootstrap } from "react-icons/bs";
-import { VscVscode } from "react-icons/vsc";
+import {
+  FaCss3Alt,
+  FaLock,
+  FaServer,
+  FaBolt,
+  FaMicrochip,
+  FaCreditCard,
+  FaMoneyBillWave,
+  FaNetworkWired,
+  FaShieldAlt,
+  FaCloud,
+} from "react-icons/fa";
 
 export const skills = [
   {
-    title: "Programming Languages",
+    title: "Languages",
     items: [
-      { name: "Java", icon: FaJava },
+      { name: "Java 8/17", icon: FaJava },
       { name: "JavaScript", icon: SiJavascript },
     ],
   },
@@ -32,29 +49,71 @@ export const skills = [
   {
     title: "Frontend",
     items: [
-      { name: "React", icon: FaReact },
+      { name: "Angular", icon: SiAngular },
+      { name: "TypeScript", icon: SiTypescript },
+      { name: "RxJS", icon: SiAngular },
       { name: "HTML5", icon: SiHtml5 },
       { name: "CSS3", icon: FaCss3Alt },
-      { name: "Bootstrap", icon: BsBootstrap },
     ],
   },
 
   {
-    title: "Backend",
+    title: "Backend & Architecture",
     items: [
       { name: "Spring Boot", icon: SiSpringboot },
-      { name: "REST API", icon: SiSpringboot },
-      { name: "JDBC", icon: FaJava },
-      { name: "Hibernate", icon: FaJava },
-      { name: "Maven", icon: SiApachemaven },
+      { name: "Spring Security", icon: FaLock },
+      { name: "Spring Cloud", icon: SiSpringboot },
+      { name: "Microservices", icon: FaServer },
+      { name: "REST APIs", icon: SiSwagger },
+      { name: "Hibernate / JPA", icon: FaJava },
     ],
   },
 
   {
-    title: "Database",
+    title: "Distributed Systems",
     items: [
-      { name: "MySQL", icon: SiMysql },
+      { name: "Kafka", icon: SiApachekafka },
+      { name: "Event-Driven Architecture", icon: FaBolt },
+      { name: "Virtual Threads & Concurrency", icon: FaMicrochip },
+    ],
+  },
+
+  {
+    title: "Payments",
+    items: [
+      { name: "ISO 8583", icon: FaNetworkWired },
+      { name: "UPI", icon: FaCreditCard },
+      { name: "Payment Gateway", icon: FaCreditCard },
+      { name: "Settlement & Reconciliation", icon: FaMoneyBillWave },
+    ],
+  },
+
+  {
+    title: "Databases",
+    items: [
       { name: "MongoDB", icon: SiMongodb },
+      { name: "Redis", icon: SiRedis },
+      { name: "Elasticsearch", icon: SiElasticsearch },
+    ],
+  },
+
+  {
+    title: "Cloud & DevOps",
+    items: [
+      { name: "AWS", icon: FaCloud },
+      { name: "Docker", icon: SiDocker },
+      { name: "Kubernetes", icon: SiKubernetes },
+      { name: "Jenkins", icon: SiJenkins },
+      { name: "Nginx", icon: SiNginx },
+    ],
+  },
+
+  {
+    title: "Security",
+    items: [
+      { name: "JWT", icon: SiJsonwebtokens },
+      { name: "AES / RSA", icon: FaLock },
+      { name: "SSL/TLS", icon: FaShieldAlt },
     ],
   },
 
@@ -63,10 +122,9 @@ export const skills = [
     items: [
       { name: "Git", icon: FaGitAlt },
       { name: "GitHub", icon: FaGithub },
+      { name: "Maven", icon: SiApachemaven },
       { name: "Postman", icon: SiPostman },
-      { name: "VS Code", icon: VscVscode },
-      { name: "STS", icon: SiSpringboot },
-      { name: "Swagger", icon: SiSwagger },
+      { name: "JUnit", icon: FaJava },
     ],
   },
 ];

@@ -1,65 +1,45 @@
 export const portfolio = {
  personal: {
-  name: "Badam Saidureddy",
+  name: "Badam Rajasekhara Reddy",
 
-  role: "Java Full Stack Developer",
+  role: "Java Full Stack Engineer",
 
   tagline:
-    "Building scalable backend systems with Java, Spring Boot and React.",
+    "Building high-throughput FinTech payment platforms with Java, Spring Boot, Kafka, and Angular.",
 
   location: "Hyderabad, India",
 
-  email: "badamsaidureddy@gmail.com",
+  email: "rajasekharjava018@gmail.com",
 
-  github: "https://github.com/Saidureddy",
+  phone: "+91-6281298823",
 
-  linkedin: "https://www.linkedin.com/in/saidureddy-badam-296148293/",
+  github: "https://github.com/Rajasekhara018",
 
-  resume: "/Resume.pdf",
+  linkedin: "https://www.linkedin.com/in/badamrajasekharareddy/",
+
+  resume: "/Rajasekhara_Reddy_Java_Fullstack_Developer_Resume.pdf",
 
   about: {
   description:
-    "I am a passionate Java Full Stack Developer with a strong interest in building scalable backend systems and modern web applications. I enjoy solving real-world problems using Java, Spring Boot, React, and MySQL. I am continuously learning new technologies and looking for opportunities to contribute and grow as a software engineer.",
+    "Java Full Stack Engineer with 4+ years of experience designing and developing enterprise-scale FinTech payment platforms across payment acquiring, payment switching, merchant onboarding, settlement, reconciliation, and real-time transaction processing. Strong expertise in Java, Spring Boot, Microservices, REST APIs, Angular, Kafka, MongoDB, Redis, and ISO 8583, with hands-on experience building high-throughput distributed systems, event-driven architectures, and secure payment infrastructure.",
 
   education: [
     {
-      degree: "B.Tech - Computer Science & Engineering (Cyber Security)",
-      institution: "St. Mary's Group of Institutions, Guntur (JNTUK)",
-      duration: "2021 - 2025",
-      score: "CGPA: 7.49",
-    },
-    {
-      degree: "Intermediate (MPC)",
-      institution: "Little Flower Junior College, Uppal, Hyderabad, Telangana",
-      duration: "2019 - 2021",
-      score: "Marks: 832/1000",
-    },
-    {
-      degree: "SSC",
-      institution: "ZP High School, Mellavagu",
-      duration: "2018 - 2019",
-      score: "GPA: 9.3",
+      degree: "Bachelor of Technology (B.Tech)",
+      institution: "Lovely Professional University, Phagwara, Punjab",
+      duration: "2021",
+      score: "83.38%",
     },
   ],
 
-  internships: [
-    {
-      company: "Sanvi Technologies",
-      role: "Full Stack Developer Intern",
-      duration: "May 2023 - July 2023",
-      location: "Hyderabad",
+  currentRole: {
+      company: "TOUCAN Payments India Private Limited",
+      role: "Software Engineer",
+      duration: "May 2022 - Present",
+      location: "Hyderabad, Telangana",
       description:
-        "Completed a Full Stack Development internship with hands-on experience in Java, HTML, CSS, JavaScript, SQL, and web application development.",
+        "Designing and developing 12+ Spring Boot microservices powering merchant onboarding, payment processing, settlement, reconciliation, and reporting for a platform handling 100K-150K+ daily card and UPI transactions.",
     },
-    {
-      company: "CV Corp Institutions",
-      role: "Full Stack Java Developer Intern",
-      duration: "July 2025 - July 2026",
-      location: "Hyderabad",
-      description:
-        "Completed advanced training in Java Full Stack Development including Core Java, Spring Boot, REST APIs, MySQL, React, Git, and real-world project development.",
-    },
-  ],
 
   location: "Hyderabad, Telangana, India",
 },
