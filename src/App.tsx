@@ -1,3 +1,4 @@
+import { Toaster } from "react-hot-toast";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import MouseGlow from "./components/Cursor/MouseGlow";
@@ -10,6 +11,16 @@ import Contact from "./components/Contact/Contact";
 function App() {
   return (
     <div className="bg-[#09090B] text-white">
+      <Toaster
+        position="top-right"
+        toastOptions={{
+          style: {
+            background: "#18181b",
+            color: "#fff",
+            border: "1px solid rgba(255,255,255,0.1)",
+          },
+        }}
+      />
       <MouseGlow />
       <Navbar />
       <Hero />

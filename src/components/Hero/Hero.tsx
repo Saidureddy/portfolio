@@ -132,9 +132,6 @@ export default function Hero() {
 </div>
 </motion.div>
 
-       
-             {/* RIGHT - AI Assistant */}
-
 {/* RIGHT */}
 
 <div className="flex flex-col items-center">
@@ -153,14 +150,6 @@ export default function Hero() {
 />
   </motion.div>
 
-  {/* AI Button */}
-
-  <button
-    className="mt-8 flex items-center gap-3 rounded-xl bg-gradient-to-r from-emerald-500 to-cyan-500 px-7 py-3 font-semibold text-white transition-all duration-300 hover:scale-105"
-  >
-    🤖 Ask My AI Assistant
-  </button>
-
 </div>
 
 {/* End Container */}
@@ -178,22 +167,6 @@ export default function Hero() {
 >
   <div className="flex h-12 w-7 justify-center rounded-full border border-white/20">
     <div className="mt-2 h-3 w-3 rounded-full bg-emerald-400" />
-  </div>
-</motion.div>
-      <motion.div
-  animate={{
-    y: [0, 10, 0],
-  }}
-  transition={{
-    repeat: Infinity,
-    duration: 1.8,
-  }}
-  className="absolute bottom-8 left-1/2 -translate-x-1/2"
->
-  <div className="h-12 w-7 rounded-full border border-white/20 flex justify-center">
-
-    <div className="mt-2 h-3 w-3 rounded-full bg-emerald-400"/>
-
   </div>
 </motion.div>
     </section>

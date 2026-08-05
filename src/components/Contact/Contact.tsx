@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
+import toast from "react-hot-toast";
 import {
   FaEnvelope,
   FaGithub,
@@ -9,6 +11,33 @@ import {
 import { portfolio } from "../../data/portfolio";
 
 export default function Contact() {
+  const [form, setForm] = useState({ name: "", email: "", message: "" });
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!form.name || !form.email || !form.message) {
+      toast.error("Please fill in every field.");
+      return;
+    }
+
+    const subject = `Portfolio message from ${form.name}`;
+    const body = `${form.message}\n\n— ${form.name} (${form.email})`;
+
+    window.location.href = `mailto:${portfolio.personal.email}?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+
+    toast.success("Opening your email client...");
+    setForm({ name: "", email: "", message: "" });
+  };
+
   return (
     <section
       id="contact"
@@ -175,22 +204,31 @@ export default function Contact() {
               Send a Message
             </h3>
 
-            <form className="space-y-5">
+            <form className="space-y-5" onSubmit={handleSubmit}>
 
               <input
                 type="text"
+                name="name"
+                value={form.name}
+                onChange={handleChange}
                 placeholder="Your Name"
                 className="w-full rounded-xl border border-white/10 bg-transparent p-4 text-white outline-none focus:border-emerald-400"
               />
 
               <input
                 type="email"
+                name="email"
+                value={form.email}
+                onChange={handleChange}
                 placeholder="Your Email"
                 className="w-full rounded-xl border border-white/10 bg-transparent p-4 text-white outline-none focus:border-emerald-400"
               />
 
               <textarea
                 rows={6}
+                name="message"
+                value={form.message}
+                onChange={handleChange}
                 placeholder="Your Message"
                 className="w-full rounded-xl border border-white/10 bg-transparent p-4 text-white outline-none focus:border-emerald-400"
               />
