@@ -37,7 +37,7 @@ export default function Projects() {
               transition={{ duration: 0.6, delay: (index % 2) * 0.15 }}
               viewport={{ once: true }}
               whileHover={{ y: -8 }}
-              className="rounded-3xl border border-slate-200 bg-slate-50 p-8 backdrop-blur-xl transition-all hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-500/20 dark:border-white/10 dark:bg-white/5"
+              className="rounded-3xl border border-slate-200 bg-slate-50 p-8 backdrop-blur-xl transition-all hover:border-[var(--accent-400)] hover:shadow-lg hover:shadow-[var(--accent-500)]/20 dark:border-white/10 dark:bg-white/5"
             >
 
               <h3 className="mb-4 text-2xl font-bold text-slate-900 dark:text-white">
@@ -54,7 +54,7 @@ export default function Projects() {
                     key={feature}
                     className="flex gap-3 text-sm leading-6 text-slate-600 dark:text-slate-300"
                   >
-                    <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-cyan-400" />
+                    <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--accent2-400)]" />
                     {feature}
                   </li>
                 ))}
@@ -66,7 +66,7 @@ export default function Projects() {
 
                   <span
                     key={tech}
-                    className="rounded-full bg-emerald-500/10 px-4 py-2 text-sm text-emerald-700 dark:text-emerald-300"
+                    className="rounded-full bg-[var(--accent-500)]/10 px-4 py-2 text-sm text-[var(--accent-700)] dark:text-[var(--accent-300)]"
                   >
                     {tech}
                   </span>

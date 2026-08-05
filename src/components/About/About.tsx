@@ -30,9 +30,9 @@ export default function About() {
 
           <div className="grid gap-6 md:grid-cols-3">
 
-            <div className="rounded-3xl border border-slate-200 bg-slate-50 dark:border-white/10 dark:bg-white/5 p-8 backdrop-blur-xl transition hover:border-emerald-400 md:col-span-2">
+            <div className="rounded-3xl border border-slate-200 bg-slate-50 dark:border-white/10 dark:bg-white/5 p-8 backdrop-blur-xl transition hover:border-[var(--accent-400)] md:col-span-2">
 
-              <GraduationCap className="mb-6 text-emerald-400" size={38} />
+              <GraduationCap className="mb-6 text-[var(--accent-400)]" size={38} />
 
               <h3 className="mb-4 text-2xl font-bold">
                 Education
@@ -42,7 +42,7 @@ export default function About() {
   {portfolio.personal.about.education.map((edu, index) => (
     <div
       key={index}
-      className="border-l-2 border-emerald-400 pl-4"
+      className="border-l-2 border-[var(--accent-400)] pl-4"
     >
       <h4 className="font-semibold text-slate-900 dark:text-white">
         {edu.degree}
@@ -56,7 +56,7 @@ export default function About() {
         {edu.duration}
       </p>
 
-      <p className="text-emerald-400 text-sm">
+      <p className="text-[var(--accent-400)] text-sm">
         {edu.score}
       </p>
     </div>
@@ -79,15 +79,15 @@ export default function About() {
 
             </div>
 
-            <div className="rounded-3xl border border-slate-200 bg-slate-50 dark:border-white/10 dark:bg-white/5 p-8 backdrop-blur-xl transition hover:border-cyan-400 md:col-span-2">
+            <div className="rounded-3xl border border-slate-200 bg-slate-50 dark:border-white/10 dark:bg-white/5 p-8 backdrop-blur-xl transition hover:border-[var(--accent2-400)] md:col-span-2">
 
-              <Briefcase className="mb-6 text-cyan-400" size={38} />
+              <Briefcase className="mb-6 text-[var(--accent2-400)]" size={38} />
 
               <h3 className="mb-4 text-2xl font-bold">
                 Current Role
               </h3>
 
-             <div className="border-l-2 border-cyan-400 pl-4">
+             <div className="border-l-2 border-[var(--accent2-400)] pl-4">
       <h4 className="font-semibold text-slate-900 dark:text-white">
         {portfolio.personal.about.currentRole.role}
       </h4>

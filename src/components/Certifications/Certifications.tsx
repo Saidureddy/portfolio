@@ -35,10 +35,10 @@ export default function Certifications() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.08 }}
               viewport={{ once: true }}
-              className="group border-t-2 border-emerald-400/40 pt-6 transition-colors duration-300 hover:border-cyan-400"
+              className="group border-t-2 border-[var(--accent-400)]/40 pt-6 transition-colors duration-300 hover:border-[var(--accent2-400)]"
             >
 
-              <p className="mb-2 bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-4xl font-black text-transparent transition-transform duration-300 group-hover:translate-x-1 md:text-5xl">
+              <p className="mb-2 bg-gradient-to-r from-[var(--accent-400)] to-[var(--accent2-400)] bg-clip-text text-4xl font-black text-transparent transition-transform duration-300 group-hover:translate-x-1 md:text-5xl">
                 {item.metric}
               </p>
 

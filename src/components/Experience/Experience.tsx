@@ -22,7 +22,7 @@ export default function Experience() {
           Experience
         </motion.h2>
 
-        <div className="relative border-l-2 border-emerald-500/40 ml-5">
+        <div className="relative border-l-2 border-[var(--accent-500)]/40 ml-5">
 
           {experiences.map((exp, index) => (
 
@@ -37,22 +37,22 @@ export default function Experience() {
 
               {/* Timeline Dot */}
 
-              <div className="absolute -left-[44px] top-4 h-6 w-6 rounded-full bg-emerald-500 border-4 border-white dark:border-[#09090B]" />
+              <div className="absolute -left-[44px] top-4 h-6 w-6 rounded-full bg-[var(--accent-500)] border-4 border-white dark:border-[#09090B]" />
 
               {/* Card */}
 
-              <div className="rounded-3xl border border-slate-200 bg-slate-50 p-8 backdrop-blur-xl transition-all duration-300 hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-500/20 dark:border-white/10 dark:bg-white/5">
+              <div className="rounded-3xl border border-slate-200 bg-slate-50 p-8 backdrop-blur-xl transition-all duration-300 hover:border-[var(--accent-400)] hover:shadow-lg hover:shadow-[var(--accent-500)]/20 dark:border-white/10 dark:bg-white/5">
 
                 <div className="flex items-center gap-4 mb-4">
 
-                  <Briefcase className="text-emerald-600 dark:text-emerald-400" size={30} />
+                  <Briefcase className="text-[var(--accent-600)] dark:text-[var(--accent-400)]" size={30} />
 
                   <div>
                     <h3 className="text-2xl font-bold text-slate-900 dark:text-white">
                       {exp.role}
                     </h3>
 
-                    <p className="text-emerald-600 dark:text-emerald-400">
+                    <p className="text-[var(--accent-600)] dark:text-[var(--accent-400)]">
                       {exp.company}
                     </p>
                   </div>
@@ -84,7 +84,7 @@ export default function Experience() {
                         key={i}
                         className="flex gap-3 text-sm leading-6 text-slate-600 dark:text-slate-300"
                       >
-                        <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-emerald-400" />
+                        <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--accent-400)]" />
                         {point}
                       </li>
                     ))}
@@ -97,7 +97,7 @@ export default function Experience() {
 
                     <span
                       key={tech}
-                      className="rounded-full border border-emerald-400/20 bg-emerald-500/10 px-4 py-2 text-sm text-emerald-700 dark:text-emerald-300"
+                      className="rounded-full border border-[var(--accent-400)]/20 bg-[var(--accent-500)]/10 px-4 py-2 text-sm text-[var(--accent-700)] dark:text-[var(--accent-300)]"
                     >
                       {tech}
                     </span>

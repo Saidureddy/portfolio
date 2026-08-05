@@ -6,6 +6,7 @@ import { portfolio } from "../../data/portfolio";
 import { useTheme } from "../../hooks/useTheme";
 import { useActiveSection } from "../../hooks/useActiveSection";
 import ThemeToggle from "../UI/ThemeToggle";
+import AccentPicker from "../UI/AccentPicker";
 
 const NAVBAR_HEIGHT = 80;
 const SECTION_IDS = portfolio.navigation.map((item) => item.href.replace("#", ""));
@@ -60,8 +61,8 @@ export default function Navbar() {
                 className={clsx(
                   "relative pb-1 text-sm font-medium transition-colors duration-300",
                   isActive
-                    ? "text-emerald-500 dark:text-emerald-400"
-                    : "text-slate-600 hover:text-emerald-500 dark:text-gray-300 dark:hover:text-emerald-400"
+                    ? "text-[var(--accent-500)] dark:text-[var(--accent-400)]"
+                    : "text-slate-600 hover:text-[var(--accent-500)] dark:text-gray-300 dark:hover:text-[var(--accent-400)]"
                 )}
               >
                 {item.name}
@@ -69,7 +70,7 @@ export default function Navbar() {
                   <motion.span
                     layoutId="nav-active-indicator"
                     transition={{ type: "spring", stiffness: 380, damping: 30 }}
-                    className="absolute -bottom-1 left-0 right-0 h-[2px] rounded-full bg-emerald-500 dark:bg-emerald-400"
+                    className="absolute -bottom-1 left-0 right-0 h-[2px] rounded-full bg-[var(--accent-500)] dark:bg-[var(--accent-400)]"
                   />
                 )}
               </a>
@@ -80,12 +81,13 @@ export default function Navbar() {
         {/* Resume Button + Theme Toggle */}
 
         <div className="hidden items-center gap-4 lg:flex">
+          <AccentPicker />
           <ThemeToggle />
           <a
             href={portfolio.personal.resume}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-xl bg-emerald-500 px-5 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-emerald-400"
+            className="rounded-xl bg-[var(--accent-500)] px-5 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-[var(--accent-400)]"
           >
             Resume
           </a>
@@ -94,6 +96,7 @@ export default function Navbar() {
         {/* Mobile */}
 
         <div className="flex items-center gap-3 lg:hidden">
+          <AccentPicker />
           <ThemeToggle />
           <Squeeze
             toggled={isOpen}
@@ -131,8 +134,8 @@ export default function Navbar() {
                     className={clsx(
                       "rounded-xl px-4 py-3 text-base font-medium transition-all duration-300",
                       isActive
-                        ? "bg-emerald-500/10 text-emerald-500 dark:text-emerald-400"
-                        : "text-slate-600 hover:bg-slate-100 hover:text-emerald-500 dark:text-gray-300 dark:hover:bg-white/5 dark:hover:text-emerald-400"
+                        ? "bg-[var(--accent-500)]/10 text-[var(--accent-500)] dark:text-[var(--accent-400)]"
+                        : "text-slate-600 hover:bg-slate-100 hover:text-[var(--accent-500)] dark:text-gray-300 dark:hover:bg-white/5 dark:hover:text-[var(--accent-400)]"
                     )}
                   >
                     {item.name}
@@ -145,7 +148,7 @@ export default function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsOpen(false)}
-                className="mt-2 rounded-xl bg-emerald-500 px-4 py-3 text-center text-base font-semibold text-white transition-all duration-300 hover:bg-emerald-400"
+                className="mt-2 rounded-xl bg-[var(--accent-500)] px-4 py-3 text-center text-base font-semibold text-white transition-all duration-300 hover:bg-[var(--accent-400)]"
               >
                 Resume
               </a>

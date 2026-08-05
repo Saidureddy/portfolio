@@ -17,6 +17,25 @@
           stored || (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
         if (theme === "dark") document.documentElement.classList.add("dark");
       })();
+
+      (function () {
+        var palettes = {
+          emerald: { a: ["#ecfdf5", "#d1fae5", "#a7f3d0", "#6ee7b7", "#34d399", "#10b981", "#059669", "#047857"], b: ["#ecfeff", "#cffafe", "#a5f3fc", "#67e8f9", "#22d3ee", "#06b6d4", "#0891b2", "#0e7490"] },
+          indigo: { a: ["#eef2ff", "#e0e7ff", "#c7d2fe", "#a5b4fc", "#818cf8", "#6366f1", "#4f46e5", "#4338ca"], b: ["#f5f3ff", "#ede9fe", "#ddd6fe", "#c4b5fd", "#a78bfa", "#8b5cf6", "#7c3aed", "#6d28d9"] },
+          amber: { a: ["#fffbeb", "#fef3c7", "#fde68a", "#fcd34d", "#fbbf24", "#f59e0b", "#d97706", "#b45309"], b: ["#fff7ed", "#ffedd5", "#fed7aa", "#fdba74", "#fb923c", "#f97316", "#ea580c", "#c2410c"] },
+          rose: { a: ["#fff1f2", "#ffe4e6", "#fecdd3", "#fda4af", "#fb7185", "#f43f5e", "#e11d48", "#be123c"], b: ["#fdf2f8", "#fce7f3", "#fbcfe8", "#f9a8d4", "#f472b6", "#ec4899", "#db2777", "#be185d"] },
+          sky: { a: ["#eff6ff", "#dbeafe", "#bfdbfe", "#93c5fd", "#60a5fa", "#3b82f6", "#2563eb", "#1d4ed8"], b: ["#f0f9ff", "#e0f2fe", "#bae6fd", "#7dd3fc", "#38bdf8", "#0ea5e9", "#0284c7", "#0369a1"] }
+        };
+        var shades = [50, 100, 200, 300, 400, 500, 600, 700];
+        var storedAccent = localStorage.getItem("accent");
+        var accent = palettes[storedAccent] ? storedAccent : "indigo";
+        var palette = palettes[accent];
+        var root = document.documentElement;
+        shades.forEach(function (shade, i) {
+          root.style.setProperty("--accent-" + shade, palette.a[i]);
+          root.style.setProperty("--accent2-" + shade, palette.b[i]);
+        });
+      })();
     </script>
   </head>
   <body>

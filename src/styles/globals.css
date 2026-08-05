@@ -1,4 +1,24 @@
 
+:root {
+  --accent-50: #eef2ff;
+  --accent-100: #e0e7ff;
+  --accent-200: #c7d2fe;
+  --accent-300: #a5b4fc;
+  --accent-400: #818cf8;
+  --accent-500: #6366f1;
+  --accent-600: #4f46e5;
+  --accent-700: #4338ca;
+
+  --accent2-50: #f5f3ff;
+  --accent2-100: #ede9fe;
+  --accent2-200: #ddd6fe;
+  --accent2-300: #c4b5fd;
+  --accent2-400: #a78bfa;
+  --accent2-500: #8b5cf6;
+  --accent2-600: #7c3aed;
+  --accent2-700: #6d28d9;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -28,6 +48,6 @@ h1, h2, h3, h4 {
 }
 
 ::selection {
-  background: #14b8a6;
+  background: var(--accent-500);
   color: white;
 }

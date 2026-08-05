@@ -31,10 +31,10 @@ export default function Skills() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: (index % 2) * 0.1 }}
               viewport={{ once: true }}
-              className="rounded-3xl border border-slate-200 bg-slate-50 p-6 backdrop-blur-xl transition hover:border-emerald-400 dark:border-white/10 dark:bg-white/5"
+              className="rounded-3xl border border-slate-200 bg-slate-50 p-6 backdrop-blur-xl transition hover:border-[var(--accent-400)] dark:border-white/10 dark:bg-white/5"
             >
 
-              <h3 className="mb-5 text-lg font-bold text-emerald-600 dark:text-emerald-400">
+              <h3 className="mb-5 text-lg font-bold text-[var(--accent-600)] dark:text-[var(--accent-400)]">
                 {group.title}
               </h3>
 
@@ -48,9 +48,9 @@ export default function Skills() {
 
                     <span
                       key={skill.name}
-                      className="flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-sm transition hover:border-emerald-400 hover:text-emerald-600 dark:border-white/10 dark:bg-black/20 dark:text-slate-200 dark:shadow-none dark:hover:text-emerald-400"
+                      className="flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-sm transition hover:border-[var(--accent-400)] hover:text-[var(--accent-600)] dark:border-white/10 dark:bg-black/20 dark:text-slate-200 dark:shadow-none dark:hover:text-[var(--accent-400)]"
                     >
-                      <Icon size={16} className="text-emerald-600 dark:text-emerald-400" />
+                      <Icon size={16} className="text-[var(--accent-600)] dark:text-[var(--accent-400)]" />
                       {skill.name}
                     </span>
 

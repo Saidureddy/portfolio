@@ -71,11 +71,11 @@ export default function Contact() {
 
             {/* Email */}
 
-            <div className="rounded-3xl border border-slate-200 bg-slate-50 dark:border-white/10 dark:bg-white/5 p-6 backdrop-blur-xl transition hover:border-emerald-400">
+            <div className="rounded-3xl border border-slate-200 bg-slate-50 dark:border-white/10 dark:bg-white/5 p-6 backdrop-blur-xl transition hover:border-[var(--accent-400)]">
 
               <div className="flex items-center gap-4">
 
-                <FaEnvelope className="text-3xl text-emerald-600 dark:text-emerald-400" />
+                <FaEnvelope className="text-3xl text-[var(--accent-600)] dark:text-[var(--accent-400)]" />
 
                 <div>
 
@@ -96,11 +96,11 @@ export default function Contact() {
 
             {/* Phone */}
 
-            <div className="rounded-3xl border border-slate-200 bg-slate-50 dark:border-white/10 dark:bg-white/5 p-6 backdrop-blur-xl transition hover:border-emerald-400">
+            <div className="rounded-3xl border border-slate-200 bg-slate-50 dark:border-white/10 dark:bg-white/5 p-6 backdrop-blur-xl transition hover:border-[var(--accent-400)]">
 
               <div className="flex items-center gap-4">
 
-                <FaPhoneAlt className="text-3xl text-emerald-600 dark:text-emerald-400" />
+                <FaPhoneAlt className="text-3xl text-[var(--accent-600)] dark:text-[var(--accent-400)]" />
 
                 <div>
 
@@ -215,7 +215,7 @@ export default function Contact() {
                 value={form.name}
                 onChange={handleChange}
                 placeholder="Your Name"
-                className="w-full rounded-xl border border-slate-300 bg-transparent p-4 text-slate-900 outline-none placeholder:text-slate-400 focus:border-emerald-400 dark:border-white/10 dark:text-white dark:placeholder:text-slate-500"
+                className="w-full rounded-xl border border-slate-300 bg-transparent p-4 text-slate-900 outline-none placeholder:text-slate-400 focus:border-[var(--accent-400)] dark:border-white/10 dark:text-white dark:placeholder:text-slate-500"
               />
 
               <input
@@ -224,7 +224,7 @@ export default function Contact() {
                 value={form.email}
                 onChange={handleChange}
                 placeholder="Your Email"
-                className="w-full rounded-xl border border-slate-300 bg-transparent p-4 text-slate-900 outline-none placeholder:text-slate-400 focus:border-emerald-400 dark:border-white/10 dark:text-white dark:placeholder:text-slate-500"
+                className="w-full rounded-xl border border-slate-300 bg-transparent p-4 text-slate-900 outline-none placeholder:text-slate-400 focus:border-[var(--accent-400)] dark:border-white/10 dark:text-white dark:placeholder:text-slate-500"
               />
 
               <textarea
@@ -233,12 +233,12 @@ export default function Contact() {
                 value={form.message}
                 onChange={handleChange}
                 placeholder="Your Message"
-                className="w-full rounded-xl border border-slate-300 bg-transparent p-4 text-slate-900 outline-none placeholder:text-slate-400 focus:border-emerald-400 dark:border-white/10 dark:text-white dark:placeholder:text-slate-500"
+                className="w-full rounded-xl border border-slate-300 bg-transparent p-4 text-slate-900 outline-none placeholder:text-slate-400 focus:border-[var(--accent-400)] dark:border-white/10 dark:text-white dark:placeholder:text-slate-500"
               />
 
               <button
                 type="submit"
-                className="w-full rounded-xl bg-gradient-to-r from-emerald-500 to-cyan-500 py-4 font-semibold text-white transition-all duration-300 hover:scale-[1.02]"
+                className="w-full rounded-xl bg-gradient-to-r from-[var(--accent-500)] to-[var(--accent2-500)] py-4 font-semibold text-white transition-all duration-300 hover:scale-[1.02]"
               >
                 Send Message
               </button>
