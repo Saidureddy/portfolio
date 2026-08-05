@@ -41,7 +41,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="bg-[#09090B] py-16 px-6"
+      className="bg-white py-16 px-6 dark:bg-[#09090B]"
     >
       <div className="mx-auto max-w-7xl">
 
@@ -49,12 +49,12 @@ export default function Contact() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-5 text-center text-5xl font-black text-white"
+          className="mb-5 text-center text-5xl font-black text-slate-900 dark:text-white"
         >
           Contact Me
         </motion.h2>
 
-        <p className="mx-auto mb-16 max-w-2xl text-center text-slate-400">
+        <p className="mx-auto mb-16 max-w-2xl text-center text-slate-500 dark:text-slate-400">
           Open to Java Full Stack Engineer opportunities and collaborations.
           Feel free to reach out if you'd like to discuss a role,
           collaboration, or project.
@@ -68,15 +68,15 @@ export default function Contact() {
 
             {/* Email */}
 
-            <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl transition hover:border-emerald-400">
+            <div className="rounded-3xl border border-black/10 bg-black/5 dark:border-white/10 dark:bg-white/5 p-6 backdrop-blur-xl transition hover:border-emerald-400">
 
               <div className="flex items-center gap-4">
 
-                <FaEnvelope className="text-3xl text-emerald-400" />
+                <FaEnvelope className="text-3xl text-emerald-600 dark:text-emerald-400" />
 
                 <div>
 
-                  <h3 className="font-semibold text-white">
+                  <h3 className="font-semibold text-slate-900 dark:text-white">
                     Email
                   </h3>
 
@@ -93,15 +93,15 @@ export default function Contact() {
 
             {/* Phone */}
 
-            <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl transition hover:border-emerald-400">
+            <div className="rounded-3xl border border-black/10 bg-black/5 dark:border-white/10 dark:bg-white/5 p-6 backdrop-blur-xl transition hover:border-emerald-400">
 
               <div className="flex items-center gap-4">
 
-                <FaPhoneAlt className="text-3xl text-emerald-400" />
+                <FaPhoneAlt className="text-3xl text-emerald-600 dark:text-emerald-400" />
 
                 <div>
 
-                  <h3 className="font-semibold text-white">
+                  <h3 className="font-semibold text-slate-900 dark:text-white">
                     Phone
                   </h3>
 
@@ -116,15 +116,15 @@ export default function Contact() {
 
             {/* GitHub */}
 
-            <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl transition hover:border-white">
+            <div className="rounded-3xl border border-black/10 bg-black/5 dark:border-white/10 dark:bg-white/5 p-6 backdrop-blur-xl transition hover:border-black dark:hover:border-white">
 
               <div className="flex items-center gap-4">
 
-                <FaGithub className="text-3xl text-white" />
+                <FaGithub className="text-3xl text-slate-900 dark:text-white" />
 
                 <div>
 
-                  <h3 className="font-semibold text-white">
+                  <h3 className="font-semibold text-slate-900 dark:text-white">
                     GitHub
                   </h3>
 
@@ -144,7 +144,7 @@ export default function Contact() {
 
             {/* LinkedIn */}
 
-            <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl transition hover:border-blue-500">
+            <div className="rounded-3xl border border-black/10 bg-black/5 dark:border-white/10 dark:bg-white/5 p-6 backdrop-blur-xl transition hover:border-blue-500">
 
               <div className="flex items-center gap-4">
 
@@ -152,7 +152,7 @@ export default function Contact() {
 
                 <div>
 
-                  <h3 className="font-semibold text-white">
+                  <h3 className="font-semibold text-slate-900 dark:text-white">
                     LinkedIn
                   </h3>
 
@@ -172,7 +172,7 @@ export default function Contact() {
 
             {/* Location */}
 
-            <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl transition hover:border-red-400">
+            <div className="rounded-3xl border border-black/10 bg-black/5 dark:border-white/10 dark:bg-white/5 p-6 backdrop-blur-xl transition hover:border-red-400">
 
               <div className="flex items-center gap-4">
 
@@ -180,11 +180,11 @@ export default function Contact() {
 
                 <div>
 
-                  <h3 className="font-semibold text-white">
+                  <h3 className="font-semibold text-slate-900 dark:text-white">
                     Location
                   </h3>
 
-                  <p className="text-slate-400">
+                  <p className="text-slate-500 dark:text-slate-400">
                     Hyderabad, Telangana, India
                   </p>
 
@@ -198,9 +198,9 @@ export default function Contact() {
 
           {/* Right Side */}
 
-          <div className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl">
+          <div className="rounded-3xl border border-black/10 bg-black/5 dark:border-white/10 dark:bg-white/5 p-8 backdrop-blur-xl">
 
-            <h3 className="mb-6 text-3xl font-bold text-white">
+            <h3 className="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
               Send a Message
             </h3>
 
@@ -212,7 +212,7 @@ export default function Contact() {
                 value={form.name}
                 onChange={handleChange}
                 placeholder="Your Name"
-                className="w-full rounded-xl border border-white/10 bg-transparent p-4 text-white outline-none focus:border-emerald-400"
+                className="w-full rounded-xl border border-black/10 bg-transparent p-4 text-slate-900 outline-none placeholder:text-slate-400 focus:border-emerald-400 dark:border-white/10 dark:text-white dark:placeholder:text-slate-500"
               />
 
               <input
@@ -221,7 +221,7 @@ export default function Contact() {
                 value={form.email}
                 onChange={handleChange}
                 placeholder="Your Email"
-                className="w-full rounded-xl border border-white/10 bg-transparent p-4 text-white outline-none focus:border-emerald-400"
+                className="w-full rounded-xl border border-black/10 bg-transparent p-4 text-slate-900 outline-none placeholder:text-slate-400 focus:border-emerald-400 dark:border-white/10 dark:text-white dark:placeholder:text-slate-500"
               />
 
               <textarea
@@ -230,7 +230,7 @@ export default function Contact() {
                 value={form.message}
                 onChange={handleChange}
                 placeholder="Your Message"
-                className="w-full rounded-xl border border-white/10 bg-transparent p-4 text-white outline-none focus:border-emerald-400"
+                className="w-full rounded-xl border border-black/10 bg-transparent p-4 text-slate-900 outline-none placeholder:text-slate-400 focus:border-emerald-400 dark:border-white/10 dark:text-white dark:placeholder:text-slate-500"
               />
 
               <button

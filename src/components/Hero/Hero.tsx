@@ -15,7 +15,7 @@ export default function Hero() {
   return (
     <section
   id="home"
-  className="relative flex min-h-screen items-center overflow-hidden bg-[#09090B] pt-28 lg:pt-20"
+  className="relative flex min-h-screen items-center overflow-hidden bg-white pt-28 dark:bg-[#09090B] lg:pt-20"
 >
     <Background />
       {/* Background Blur */}
@@ -36,13 +36,13 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="space-y-8"
         >
-          <span className="rounded-full border border-emerald-500/30 bg-emerald-500/10 px-5 py-2 text-sm text-emerald-300">
+          <span className="rounded-full border border-emerald-500/30 bg-emerald-500/10 px-5 py-2 text-sm text-emerald-700 dark:text-emerald-300">
             👋 Welcome To My Portfolio
           </span>
 
-          <h1 className="text-6xl lg:text-8xl font-black leading-none">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-none">
 
-  <span className="block text-white">
+  <span className="block text-slate-900 dark:text-white">
     Badam
   </span>
 
@@ -70,7 +70,7 @@ export default function Hero() {
 
   </div>
 
-  <p className="max-w-xl text-lg leading-8 text-slate-300">
+  <p className="max-w-xl text-lg leading-8 text-slate-600 dark:text-slate-300">
     4+ years building enterprise-scale FinTech payment platforms with Java,
     Spring Boot, Microservices, Angular, and Kafka — spanning payment
     acquiring, switching, settlement, and reconciliation.
@@ -95,7 +95,7 @@ export default function Hero() {
   <a
     href={portfolio.personal.resume}
     download
-    className="rounded-xl border border-white/20 px-6 py-3 font-semibold text-white transition-all duration-300 hover:border-emerald-400 hover:bg-white/10"
+    className="rounded-xl border border-black/20 px-6 py-3 font-semibold text-slate-900 transition-all duration-300 hover:border-emerald-400 hover:bg-black/5 dark:border-white/20 dark:text-white dark:hover:bg-white/10"
   >
     ⬇ Download Resume
   </a>
@@ -104,7 +104,7 @@ export default function Hero() {
 
   <a
     href="#projects"
-    className="rounded-xl border border-cyan-400/40 px-6 py-3 font-semibold text-cyan-300 transition-all duration-300 hover:bg-cyan-500/10"
+    className="rounded-xl border border-cyan-400/40 px-6 py-3 font-semibold text-cyan-700 transition-all duration-300 hover:bg-cyan-500/10 dark:text-cyan-300"
   >
     💼 Projects
   </a>
@@ -115,18 +115,18 @@ export default function Hero() {
 <div className="mt-10 flex flex-wrap gap-10">
 
   <div>
-    <h2 className="text-4xl font-bold text-emerald-400">4+</h2>
-    <p className="text-slate-400">Years Experience</p>
+    <h2 className="text-4xl font-bold text-emerald-600 dark:text-emerald-400">4+</h2>
+    <p className="text-slate-500 dark:text-slate-400">Years Experience</p>
   </div>
 
   <div>
-    <h2 className="text-4xl font-bold text-cyan-400">12+</h2>
-    <p className="text-slate-400">Microservices Shipped</p>
+    <h2 className="text-4xl font-bold text-cyan-600 dark:text-cyan-400">12+</h2>
+    <p className="text-slate-500 dark:text-slate-400">Microservices Shipped</p>
   </div>
 
   <div>
-    <h2 className="text-4xl font-bold text-yellow-400">8K TPS</h2>
-    <p className="text-slate-400">Peak Throughput</p>
+    <h2 className="text-4xl font-bold text-amber-600 dark:text-yellow-400">8K TPS</h2>
+    <p className="text-slate-500 dark:text-slate-400">Peak Throughput</p>
   </div>
 
 </div>
@@ -142,7 +142,7 @@ export default function Hero() {
     initial={{ opacity: 0, scale: 0.8 }}
     animate={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.8 }}
-    className="rounded-3xl border border-white/10 bg-white/5 p-5 backdrop-blur-xl shadow-2xl"
+    className="rounded-3xl border border-black/10 bg-black/5 p-5 backdrop-blur-xl shadow-2xl dark:border-white/10 dark:bg-white/5"
   >
     <img
   src={profileImg}
@@ -165,7 +165,7 @@ export default function Hero() {
   }}
   className="absolute bottom-8 left-1/2 -translate-x-1/2"
 >
-  <div className="flex h-12 w-7 justify-center rounded-full border border-white/20">
+  <div className="flex h-12 w-7 justify-center rounded-full border border-black/20 dark:border-white/20">
     <div className="mt-2 h-3 w-3 rounded-full bg-emerald-400" />
   </div>
 </motion.div>

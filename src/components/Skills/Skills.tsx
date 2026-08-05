@@ -5,7 +5,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="bg-[#09090B] py-16 px-6"
+      className="bg-white py-16 px-6 dark:bg-[#09090B]"
     >
       <div className="mx-auto max-w-7xl">
 
@@ -13,7 +13,7 @@ export default function Skills() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-16 text-center text-5xl font-black text-white"
+          className="mb-16 text-center text-5xl font-black text-slate-900 dark:text-white"
         >
           Skills
         </motion.h2>
@@ -30,7 +30,7 @@ export default function Skills() {
               viewport={{ once: true }}
             >
 
-              <h3 className="mb-8 text-2xl font-bold text-emerald-400">
+              <h3 className="mb-8 text-2xl font-bold text-emerald-600 dark:text-emerald-400">
                 {group.title}
               </h3>
 
@@ -48,17 +48,17 @@ export default function Skills() {
                         scale: 1.05,
                       }}
                       key={skill.name}
-                      className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl transition"
+                      className="rounded-3xl border border-black/10 bg-black/5 p-6 backdrop-blur-xl transition dark:border-white/10 dark:bg-white/5"
 
                     >
                       <div className="flex flex-col items-center">
 
                         <Icon
                           size={45}
-                          className="mb-4 text-emerald-400"
+                          className="mb-4 text-emerald-600 dark:text-emerald-400"
                         />
 
-                        <h4 className="text-center font-semibold text-white">
+                        <h4 className="text-center font-semibold text-slate-900 dark:text-white">
                           {skill.name}
                         </h4>
 

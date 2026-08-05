@@ -6,7 +6,7 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="bg-[#09090B] py-16 px-6"
+      className="bg-white py-16 px-6 dark:bg-[#09090B]"
     >
       <div className="mx-auto max-w-6xl">
 
@@ -14,7 +14,7 @@ export default function Experience() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-16 text-center text-5xl font-black text-white"
+          className="mb-16 text-center text-5xl font-black text-slate-900 dark:text-white"
         >
           Experience
         </motion.h2>
@@ -34,29 +34,29 @@ export default function Experience() {
 
               {/* Timeline Dot */}
 
-              <div className="absolute -left-[44px] top-4 h-6 w-6 rounded-full bg-emerald-500 border-4 border-[#09090B]" />
+              <div className="absolute -left-[44px] top-4 h-6 w-6 rounded-full bg-emerald-500 border-4 border-white dark:border-[#09090B]" />
 
               {/* Card */}
 
-              <div className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl transition-all duration-300 hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-500/20">
+              <div className="rounded-3xl border border-black/10 bg-black/5 p-8 backdrop-blur-xl transition-all duration-300 hover:border-emerald-400 hover:shadow-lg hover:shadow-emerald-500/20 dark:border-white/10 dark:bg-white/5">
 
                 <div className="flex items-center gap-4 mb-4">
 
-                  <Briefcase className="text-emerald-400" size={30} />
+                  <Briefcase className="text-emerald-600 dark:text-emerald-400" size={30} />
 
                   <div>
-                    <h3 className="text-2xl font-bold text-white">
+                    <h3 className="text-2xl font-bold text-slate-900 dark:text-white">
                       {exp.role}
                     </h3>
 
-                    <p className="text-emerald-400">
+                    <p className="text-emerald-600 dark:text-emerald-400">
                       {exp.company}
                     </p>
                   </div>
 
                 </div>
 
-                <div className="mb-6 flex flex-wrap gap-6 text-slate-400 text-sm">
+                <div className="mb-6 flex flex-wrap gap-6 text-slate-500 dark:text-slate-400 text-sm">
 
                   <div className="flex items-center gap-2">
                     <CalendarDays size={16} />
@@ -70,7 +70,7 @@ export default function Experience() {
 
                 </div>
 
-                <p className="mb-6 leading-7 text-slate-300">
+                <p className="mb-6 leading-7 text-slate-600 dark:text-slate-300">
                   {exp.description}
                 </p>
 
@@ -79,7 +79,7 @@ export default function Experience() {
                     {exp.highlights.map((point, i) => (
                       <li
                         key={i}
-                        className="flex gap-3 text-sm leading-6 text-slate-300"
+                        className="flex gap-3 text-sm leading-6 text-slate-600 dark:text-slate-300"
                       >
                         <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-emerald-400" />
                         {point}
@@ -94,7 +94,7 @@ export default function Experience() {
 
                     <span
                       key={tech}
-                      className="rounded-full border border-emerald-400/20 bg-emerald-500/10 px-4 py-2 text-sm text-emerald-300"
+                      className="rounded-full border border-emerald-400/20 bg-emerald-500/10 px-4 py-2 text-sm text-emerald-700 dark:text-emerald-300"
                     >
                       {tech}
                     </span>
