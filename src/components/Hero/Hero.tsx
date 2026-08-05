@@ -1,8 +1,14 @@
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { portfolio } from "../../data/portfolio";
+import { certificates } from "../../data/certifications";
 import Background from "../Background/Background";
 import profileImg from "../../assets/images/profile.jpg";
+
+const typingSequence = certificates.flatMap((item) => [
+  `${item.metric} ${item.tagline}`,
+  2000,
+]);
 
 
 export default function Hero() {
@@ -55,16 +61,7 @@ export default function Hero() {
   <div className="h-14">
 
     <TypeAnimation
-      sequence={[
-        "Java Full Stack Engineer",
-        2000,
-        "Payments & Distributed Systems",
-        2000,
-        "Spring Boot Microservices",
-        2000,
-        "Angular Developer",
-        2000,
-      ]}
+      sequence={typingSequence}
       wrapper="span"
       speed={50}
       repeat={Infinity}

@@ -6,7 +6,7 @@ export default function Certifications() {
   return (
     <section
       id="certifications"
-      className="bg-[#09090B] py-24 px-6"
+      className="bg-[#09090B] py-16 px-6"
     >
       <div className="mx-auto max-w-7xl">
 
