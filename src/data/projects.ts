@@ -81,4 +81,35 @@ export const projects = [
 
     image: "/projects/employee.png",
   },
+
+  {
+    title: "AI-Powered Document Question Answering System",
+
+    description:
+      "An AI-powered document question answering system that enables users to ask questions about uploaded PDF documents. The application extracts and chunks document text, generates embeddings, stores them in PGVector, retrieves relevant content through similarity search, and uses Retrieval-Augmented Generation (RAG) with an LLM to generate grounded answers.",
+
+    technologies: [
+      "Java 17",
+      "Spring Boot",
+      "Spring AI",
+      "React.js",
+      "PostgreSQL",
+      "PGVector",
+      "REST APIs",
+      "LLM",
+    ],
+
+    features: [
+      "PDF Text Extraction",
+      "Document Chunking",
+      "Embeddings",
+      "PGVector Similarity Search",
+      "RAG-based Question Answering",
+      "LLM Integration",
+    ],
+
+    github: "https://github.com/Saidureddy",
+
+    image: "/projects/ai-document-qa.png",
+  },
 ];

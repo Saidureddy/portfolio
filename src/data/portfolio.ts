@@ -15,7 +15,7 @@ export const portfolio = {
 
   linkedin: "https://www.linkedin.com/in/saidureddy-badam-296148293/",
 
-  resume: "/Resume.pdf",
+  resume: "/Badam_Saidureddy_FullStackDeveloper_Resume.pdf",
 
   about: {
   description:
